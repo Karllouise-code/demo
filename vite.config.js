@@ -6,6 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/demo/', // 👈 Add this line with your repo name
   plugins: [
     vue(),
     vueDevTools(),
