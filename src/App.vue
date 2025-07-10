@@ -3,7 +3,6 @@
     <BookTable @onAddBook="isAdd = true" :isAdd="isAdd" @onCancel="isAdd = false" :isAdded="isAdded" @isRefresh="isAdded = false" @onEditBook="onEditBook" />
   </main>
   <div v-if="isAdd || isEdit">
-    <!-- <AddBook @onSuccess="onSuccess" :isEdit="isEdit" :book="book" :editIndex="index" /> -->
     <AddBook @onSuccess="onSuccess" :isEdit="isEdit" :book="book" :index="index" />
   </div>
 </template>
